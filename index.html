@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            border: 1px solid #000;
+            width: 70%;
+            height: 70%;
+            background-color: #fff;
+        }
+
+        .sidebar {
+            width: 30%;
+            padding: 20px;
+            border-right: 1px solid #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .sidebar img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid #000;
+        }
+
+        .sidebar .info {
+            text-align: center;
+        }
+
+        .sidebar .info p {
+            margin: 5px 0;
+        }
+
+        .sidebar .technologies {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .sidebar .technologies p {
+            margin: 5px 0;
+        }
+
+        .content {
+            width: 70%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .content .section {
+            margin-bottom: 20px;
+        }
+
+        .content .section h2 {
+            margin: 0 0 10px 0;
+        }
+
+        .content .section .line {
+            width: 100%;
+            height: 2px;
+            background-color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <img src="assets/image/Captura de tela_22-8-2024_16945_teams.microsoft.com.jpeg" alt="Profile Picture">
+            <div class="info">
+                <p>Henrique Schenkel Araujo</p>
+                <p>henrique16.schenkel@gmail.com</p>
+                <p>Instagram: @henriquesaraujo__</p>
+            </div>
+            <div class="technologies">
+                <p><strong>Tecnologias</strong></p>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="section">
+                <h2>Fale um pouco sobre você</h2>
+                <h3>Meu nome é Henrique, tenho 16 anos de idade. Sou amante de futebol e sou torcedor do Vasco Da Gama.</h3>
+                <h3>Gosto muito de jogar vídeo game e passar meu tempo livre com a familia e amigos.</h3>
+                <div class="line"></div>
+            </div>
+            <div class="section">
+                <h2>Escolaridade</h2>
+                <h3>Ensino fundamental concluído (1° ao 9°)</h3>
+                <h3>Atualmente cursando o 1°ano do Ensino Médio e fazendo o curso de informática</h3>
+                <div class="line"></div>
+            </div>
+            <div class="section">
+                <h2>Conhecimentos</h2>
+                <h3>HTML</h3>
+                <h3>JAVASCRIPT</h3>
+                <h3>Desenvolvimento de sites</h3>
+                <h3>Futebol</h3>
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
